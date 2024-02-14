@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+overflow-x: hidden;	
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li, a, button, .logo {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+#click {
+	display: none;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100vw;
+    background-color: #24252A;
+	z-index: 9;
+}
+
+.nav__links {
+	list-style: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.nav__links li a:hover, .active {
+	color: #0088A9;
+}
+
+button {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+
+.logo {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.menu-btn {
+	color: white;
+	display: none;
+	cursor: pointer;
+	padding-left: 10px;
+}
+.latest{
+  padding-top: 10em;  
+  padding-bottom: 2%;
+
+ 
+}
+.moviepage{
+padding-top: 10em; 
+}
+.latest h3{
+    padding-top: 1em;
+    margin-bottom: 5px;
+}
+.upcomingmovies a{
+	color: #000000;
+	font-weight: bold;
+}
+.search-results a{
+	color: #000000;
+	font-weight: bold;	
+}
+/* Search form */
+.searchdetails{
+margin-bottom: 20px;	
+}
+.movietvsearchdata li {
+	color: #000000;
+	margin-top: 5%;
+}
+.discovermore{
+width: 30%;
+margin: 10px auto;
+display: none;
+}
+.moreupcomingmovies{
+display: block;
+margin: 0 auto;
+}
+.moretrendmovies{
+	display: block;
+	margin: 0 auto;	
+}
+.movietvsearchdata{
+background-color: #ffffff;
+border-radius: 5px;
+padding: 1%;
+display: none;
+}
+.movietvsearchdata a {
+color: #000000;	
+}
+.form-control:focus{
+border-color: #000000;	
+box-shadow: none;
+}
+.btnsearch{
+border-radius: 0;	
+}
+.btnsearchheader{
+border-radius: 0;	
+}
+.searchsuggest{
+display: flex;	
+}
+.searchsuggest img{
+max-width: 5%;
+margin-bottom: 1%;
+}
+.mvimgtxt{
+float: left;
+display: contents;
+}
+.mvimgtxt p{
+margin-left: 1%;	
+}
+.trendmovies p{
+color: #000000;	
+font-weight: bold;
+text-align: center;
+}
+.upcomingmovies p{
+text-align: center;
+}
+.upcomingmoviesbtn{
+ width: auto;
+ margin: 0 auto;	
+}
+.welcomemsg{
+margin-bottom: 3%;	
+}
+.header-search-from{
+display: none;	
+}
+.searchicongroup{
+background-color: #24252A;	
+border: #24252A;
+font-size: 20px;
+}
+.searchicongroup:hover{
+background-color: #24252A;	
+}
+.searchicongroupclose{
+background-color: #24252A;	
+border: #24252A;	
+display: none;
+}
+.searchicongroupclose:hover {
+background-color: #24252A;	
+}
+.custombackmv {
+    background-color:#000000de;
+    margin-top: -8em;
+    margin-bottom: -2em;
+    color: #ffffff;
+    text-shadow: 0 0 black;
+}
+.cast-profile{
+    border: 2px solid #cccccc;
+    /* width: auto; */
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 1px 2px 0px 0px #ccccccbf;	
+}
+
+/* css within row slideproduct */
+
+.castmemb{
+display: flex;
+overflow: hidden;	
+border: 10px solid #ffffff;
+}
+.cast-text{
+ width: 10em;
+ margin: 0 auto;	
+}
+.slideprev{
+float: left;
+position: relative;
+top: 8em;
+cursor: pointer;
+}
+.slidenext{
+float: right;
+position: relative;
+top:8em;
+cursor: pointer;
+}
+.bi-arrow-right-circle-fill{
+font-size: xx-large;
+}
+.bi-arrow-left-circle-fill{
+font-size: xx-large;
+}
+/* end of css within row slideproduct */
+.trailericon{
+position: absolute;
+top: 5em;
+left: 3em;
+font-size: xxx-large;
+cursor: pointer;
+width: auto;
+height: auto;
+}
+img.movies-poster{
+box-shadow: 2px 2px 2px 2px #cccccc;
+border-radius: 11px;
+}
+
+/* Movies List */
+.movie_list_ul {
+padding: 24px;
+}
+  .movie_list_item {
+	position: relative;
+	background: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .movie_list_item img {
+	height: 300px;
+	object-fit: cover;
+	border-radius: 6px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+  }
+  .movie_info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 15px;
+  }
+
+@media (max-width: 1250px) {
+	.nav__links {
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background-color: #24252A;
+		height: 100vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+
+	.cta {
+		display: inline-flex;
+		position: fixed;
+		bottom: 80px;
+		width: 100vw;
+		left: -100;
+		justify-content: center;
+		transition: all 0.3s ease;
+	}
+
+
+	#click:not(:checked) ~ .nav__links{
+		left: -100%;
+	}
+	
+	#click:not(:checked) ~ .cta{
+		left: -100%;
+	}
+
+	#click:checked ~ .nav__links {
+		left: 0%;
+	}
+
+	#click:checked ~ .cta{
+		left: 0%;
+	}
+
+	#click:checked ~ .menu-btn i:before {
+		content: "\f00d";
+	}
+
+	.nav__links li {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.menu-btn {
+		display: inline-block;
+	}
+	
+}

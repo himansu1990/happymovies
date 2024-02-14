@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Happy Movies and Shows</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Bootstrap Font Icon CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <header-el></header-el>
+        </div>
+
+            <div class="container-fluid">
+                
+                <div class="content">
+                    
+<div class="latest">
+
+  <div class="welcomemsg">
+    <h2>Explore millions of movies and tv shows!</h2>
+  </div>
+    <div class="searchdetails">
+                        <search-el></search-el>
+
+                    </div>
+                    
+                    <div class="row moviepage" style="display: none;"></div>
+                    <div class="row castmemb" style="display: none;"></div>
+                    <div class="row no-result"></div>
+
+                    <ul class="nav nav-tabs nav-justified mb-3 homepagetabs" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link active"
+                            id="ex3-tab-1"
+                            data-bs-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                            >Latest</a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="ex3-tab-2"
+                            data-bs-toggle="tab"
+                            href="#ex3-tabs-2"
+                            role="tab"
+                            aria-controls="ex3-tabs-2"
+                            aria-selected="false"
+                            >Trending</a
+                          >
+                        </li>
+                        <!-- <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="ex3-tab-3"
+                            data-bs-toggle="tab"
+                            href="#ex3-tabs-3"
+                            role="tab"
+                            aria-controls="ex3-tabs-3"
+                            aria-selected="false"
+                            >Another link</a
+                          >
+                        </li> -->
+                      </ul>
+                      
+                      <div class="tab-content" id="ex2-content">
+                        <div
+                          class="tab-pane fade show active"
+                          id="ex3-tabs-1"
+                          role="tabpanel"
+                          aria-labelledby="ex3-tab-1">
+                        <div class="row upcomingmovies">
+                        </div> 
+                        <div class="text-center">
+                        <button type="button" class="btn btn-success btn-md upcomingmoviesbtn">Load More</button>      
+                      </div>  
+                      </div>
+                        <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+                          <div class="row trendmovies">
+                          </div>
+                          <div class="text-center">
+                          <button type="button" class="btn btn-success btn-md trendmoviesbtn">Load More</button>      
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex3-tab-3">
+                          Tab 3 content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque
+                          minima mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                          commodi culpa est sed ad amet.
+                        </div>
+                      </div>
+                   
+
+</div>
+    <div class="searchheadline"></div>
+    <div class="total-movie-results"></div>
+    <div class="total-tv-results"></div>
+<div class="end-result"></div>
+<div class="row search-results">
+
+</div>
+<div class="end-result"></div>
+<button type="button" class="btn btn-success btn-md discovermore">Load More</button>      
+
+        </div>
+        <footer-el></footer-el>
+
+    </div>
+        
+        
+    </div>
+    <script src="webcomp.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="autocomplete.js"></script> -->
+   
+</body>
+</html>
