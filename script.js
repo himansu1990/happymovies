@@ -45,7 +45,7 @@ let mvResult = ``
 let movieShowSearch = ``
 let tvShowSearch = ``
 async function recentMovies(){
-let ltMoviesUrl = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0a5247d162a6d3455cfaff2ae266f450&original_languag=hi&region=IN&release_date.gte=2024-01-01&release_date.lte=2024-03-31&page=${page}`)
+let ltMoviesUrl = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=0a5247d162a6d3455cfaff2ae266f450&original_languag=hi&region=IN&release_date.gte=2024-01-01&release_date.lte=2024-05-31&page=${page}`)
 let latestMovieRaw =  await ltMoviesUrl.json()
 let finalLatest = latestMovieRaw.results
 console.log(finalLatest)  
